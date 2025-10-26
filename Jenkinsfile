@@ -5,6 +5,13 @@ import sans.jenkins.Output;
 pipeline {
     agent any
     stages {
+        stage("Hello World") {
+            steps{
+                script{
+                    hello.world()
+                }
+            }
+        }
         stage("Hello Sans") {
             steps{
                 script{
@@ -12,10 +19,11 @@ pipeline {
                 }
             }
         }
-        stage("Hello World") {
+        stage("Global variable") {
             steps{
                 script{
-                    hello.world()
+                    echo(author.name())
+                    echo(author.address())
                 }
             }
         }

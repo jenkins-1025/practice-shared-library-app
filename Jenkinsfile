@@ -22,7 +22,7 @@ pipeline {
         stage("Global variable") {
             steps{
                 script{
-                    echo(author)
+                    echo(author())
                     echo(author.name())
                     echo(author.address())
                 }

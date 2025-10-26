@@ -8,7 +8,7 @@ pipeline {
         stage("Hello Sans") {
             steps{
                 script{
-                    Output.hello("M. Hasan")
+                    Output.hello(this, "M. Hasan")
                 }
             }
         }

@@ -1,8 +1,17 @@
 @Library("practice-shared-library@main")_
 
+import sans.jenkins.Output;
+
 pipeline {
     agent any
     stages {
+        stage("Hello Sans") {
+            steps{
+                script{
+                    Output.hello("M. Hasan")
+                }
+            }
+        }
         stage("Hello World") {
             steps{
                 script{

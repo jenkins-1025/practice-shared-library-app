@@ -35,5 +35,12 @@ pipeline {
                 }
             }
         }
+        stage("Maven Lists") {
+            steps{
+                script{
+                    maven(["clean","compile","test"])
+                }
+            }
+        }
     }
 }

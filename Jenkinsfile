@@ -5,7 +5,7 @@
 //mavenPipeline()
 
 sansPipeline([
-    type: "untype"
+    type: "maven"
 ])
 
 /*

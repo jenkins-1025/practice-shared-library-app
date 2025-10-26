@@ -1,7 +1,10 @@
 @Library("practice-shared-library@main")_
 
-import sans.jenkins.Output;
+//import sans.jenkins.Output;
 
+mavenPipeline()
+
+/*
 pipeline {
     agent any
     stages {
@@ -62,3 +65,4 @@ pipeline {
         }
     }
 }
+*/

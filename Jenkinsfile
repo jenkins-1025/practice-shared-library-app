@@ -2,7 +2,11 @@
 
 //import sans.jenkins.Output;
 
-mavenPipeline()
+//mavenPipeline()
+
+sansPipeline([
+    type: "untype"
+])
 
 /*
 pipeline {
